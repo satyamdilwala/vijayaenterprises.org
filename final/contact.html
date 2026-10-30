@@ -376,7 +376,7 @@
                     const productName = document.getElementById('contact-product').value;
                     const message = document.getElementById('contact-message').value;
 
-                    // Feedback UI
+                    
                     submitBtn.disabled = true;
                     submitBtn.textContent = 'Sending Inquiry...';
                     feedback.style.display = 'block';
@@ -408,6 +408,7 @@
                         feedback.style.background = '#fef9c3';
                         feedback.style.color = '#854d0e';
                         feedback.innerHTML = `Could not send email right now. Connecting to WhatsApp desk...`;
+
                     } finally {
                         submitBtn.disabled = false;
                         submitBtn.textContent = 'Submit Inquiry';

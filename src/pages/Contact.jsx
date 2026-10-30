@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Clock, User, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
-import { ENQUIRY_API_URL } from '../config';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -25,10 +24,10 @@ const Contact = () => {
         setStatusMessage('Sending your enquiry...');
 
         try {
-            const response = await fetch(ENQUIRY_API_URL, {
+            const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
-                    "Content-Type": "application/json"
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(formData)
             });

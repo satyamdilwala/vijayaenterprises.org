@@ -3,7 +3,6 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, CheckCircle2, FileText, Send, X, AlertCircle, Loader2 } from 'lucide-react';
 import { products } from '../data/products';
-import { ENQUIRY_API_URL } from '../config';
 
 const ProductDetail = () => {
     const { id } = useParams();
@@ -39,10 +38,10 @@ const ProductDetail = () => {
         setStatusMessage('Sending inquiry...');
 
         try {
-            const response = await fetch(ENQUIRY_API_URL, {
+            const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
-                    "Content-Type": "application/json"
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
                     ...formData,

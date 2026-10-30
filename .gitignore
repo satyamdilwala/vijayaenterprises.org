@@ -1,8 +1,11 @@
 node_modules/
+dist/
+dist-ssr/
+*.local
+.DS_Store
 .env
 .env.*
-.DS_Store
-dist/
 server/
 scratch/
 *.log
+.astra-session.token
