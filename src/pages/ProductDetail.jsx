@@ -55,7 +55,7 @@ const ProductDetail = () => {
 
             if (response.ok && result.success) {
                 setStatus('success');
-                setStatusMessage('Thank you! Your inquiry has been sent to info@vijayaenterprises.org.');
+                setStatusMessage('Thank you! Your inquiry has been sent to contact@vijayaenterprises.org.');
                 setFormData({ name: '', email: '', phone: '', message: '' });
                 setTimeout(() => {
                     setIsModalOpen(false);

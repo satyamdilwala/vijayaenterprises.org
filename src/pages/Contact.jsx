@@ -37,7 +37,7 @@ const Contact = () => {
 
             if (response.ok && result.success) {
                 setStatus('success');
-                setStatusMessage('Thank you! Your enquiry has been sent successfully to info@vijayaenterprises.org.');
+                setStatusMessage('Thank you! Your enquiry has been sent successfully to contact@vijayaenterprises.org.');
                 setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
             } else {
                 setStatus('error');
@@ -93,7 +93,7 @@ const Contact = () => {
                                     <Phone className="icon" />
                                     <div>
                                         <h3>Phone / WhatsApp</h3>
-                                        <p>+91 022 2562 3903 / 3905</p>
+                                        <p>+91-22-3500 8094</p>
                                         <p>+91 022 2590 4763</p>
                                         <p>Mobile: +91 98210 11480</p>
                                     </div>
@@ -103,7 +103,7 @@ const Contact = () => {
                                     <Mail className="icon" />
                                     <div>
                                         <h3>Email</h3>
-                                        <p>info@vijayaenterprises.org</p>
+                                        <p>contact@vijayaenterprises.org</p>
                                     </div>
                                 </div>
 
