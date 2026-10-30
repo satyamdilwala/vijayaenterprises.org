@@ -56,7 +56,7 @@ const Footer = () => {
                         <h3>Our Location</h3>
                         <div className="map-container">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.4239857973053!2d72.93796537599023!3d19.17665224881792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8f9e665fd21%3A0xc6cb557e4e8992a7!2sUdhyog%20Kshetra%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1700130000000!5m2!1sen!2sin"
+                                src="https://maps.google.com/maps?q=227,+2nd+Floor,+VIJAYA+ENTERPRISES,+Udyog+Kshetra+Ind.+Estate,+Mulund+West,+Mumbai,+Maharashtra+400080&hl=en&z=17&output=embed"
                                 width="100%"
                                 height="150"
                                 style={{ border: 0, borderRadius: '10px' }}
