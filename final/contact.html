@@ -387,7 +387,7 @@
                     try {
                         const response = await fetch('https://astra.salesfundaa.com/v1/CRM1/vijayaenterprises-org/enquiry', {
                             method: 'POST',
-                            headers: { 'Content-Type': 'text/plain' },
+                            headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ name, email, phone, productName, message, subject: `Website Inquiry: ${productName}` })
                         });
 

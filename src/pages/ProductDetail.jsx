@@ -42,7 +42,7 @@ const ProductDetail = () => {
             const response = await fetch(ENQUIRY_API_URL, {
                 method: 'POST',
                 headers: {
-                    "Content-Type": "text/plain"
+                    "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
                     ...formData,
