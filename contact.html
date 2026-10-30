@@ -391,7 +391,8 @@
                             body: JSON.stringify({ name, email, phone, productName, message, subject: `Website Inquiry: ${productName}` })
                         });
 
-                        const data = await response.json();
+                        const dataRaw = await response.json();
+                        const data = (typeof dataRaw === "string") ? JSON.parse(dataRaw) : dataRaw;
 
                         if (data.success) {
                             feedback.style.background = '#dcfce7';
