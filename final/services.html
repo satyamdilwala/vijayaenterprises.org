@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Vijaya Enterprises</title>
+    <meta name="description" content="Discover trade indenting, bulk sourcing, quality inspection, logistics management, and export documentation services by Vijaya Enterprises.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            padding: 6rem 0 3.5rem;
+            background: linear-gradient(135deg, #09261C 0%, #1B4332 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: var(--white);
+            font-size: 3.2rem;
+            font-weight: 800;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--secondary-color);
+            box-shadow: 0 15px 35px rgba(27, 67, 50, 0.12);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(212, 163, 115, 0.15);
+            color: var(--primary-color);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <i data-lucide="map-pin"></i>
+                    <div class="detail">
+                        <span class="label">Headquarters</span>
+                        <span class="value">Mulund (West), Mumbai</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="phone"></i>
+                    <div class="detail">
+                        <span class="label">Trade Desk</span>
+                        <span class="value">+91-98210 11480</span>
+                    </div>
+                </div>
+            </div>
+            <a href="contact.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1.2rem;">Inquire Now</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/vijaya-logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="name">Vijaya Enterprises</span>
+                    <span class="tagline">Global Export/Import</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="services.html" class="active">SERVICES</a></li>
+                <li><a href="quality.html">QUALITY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            <div class="nav-btns">
+                <a href="https://wa.me/919821011480" target="_blank" class="btn-whatsapp-nav">
+                    <i data-lucide="message-circle" style="width:18px; height:18px;"></i> WhatsApp
+                </a>
+                <div class="mobile-toggle"><i data-lucide="menu"></i></div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="quality.html">QUALITY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Trade Services & Solutions</h1>
+            <p>Comprehensive indenting, bulk sourcing, quality verification, & international logistics.</p>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="handshake" style="width:32px; height:32px;"></i></div>
+                    <h3>Trade Indenting & Sourcing</h3>
+                    <p>Acting as an authoritative indenting bridge between certified agricultural producers and international buyers, locking spot market quotes and contracts with complete transparency.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="shield-check" style="width:32px; height:32px;"></i></div>
+                    <h3>Quality Inspection & COA</h3>
+                    <p>Pre-shipment sampling and third-party laboratory testing for moisture, crude protein, fiber, fat, and AFLA toxin levels to ensure adherence to export standards.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="truck" style="width:32px; height:32px;"></i></div>
+                    <h3>End-to-End Logistics</h3>
+                    <p>Freight forwarding, container booking, customs documentation, phytosanitary clearance, and door-step transport execution for seamless international transit.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="package" style="width:32px; height:32px;"></i></div>
+                    <h3>Customized Packaging</h3>
+                    <p>Flexible packaging solutions tailored to buyer requirements including 25kg PP bags, 50kg bags, bulk HDPE liner bags, and 1,000kg jumbo totes.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="line-chart" style="width:32px; height:32px;"></i></div>
+                    <h3>Market Intelligence</h3>
+                    <p>Regular crop yield forecasts, pricing trend alerts, and seasonal harvest insights to help clients optimize their purchasing timing and cost efficiency.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="file-text" style="width:32px; height:32px;"></i></div>
+                    <h3>Export Documentation</h3>
+                    <p>Managing Certificate of Origin, Bill of Lading, Fumigation Certificates, Phytosanitary approvals, and LC compliance without administrative friction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="logo">
+                        <img src="images/vijaya-logo.png" alt="Logo" class="logo-img">
+                        <div class="footer-logo-text">
+                            <span class="name">Vijaya Enterprises</span>
+                            <span class="tagline">Global Export/Import</span>
+                        </div>
+                    </div>
+                    <p>Established in 1995, we are dedicated to bringing the best of agriculture to the world with integrity and excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="quality.html">Quality</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin" class="icon"></i>
+                        <span>227, 2nd Floor, UdhyogKshetra Industrial Estate, Mulund - Goregaon Link Road, Mulund (West), Mumbai 400 080, India.</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="phone" class="icon"></i>
+                        <span>+91-22-2562 3903 / 05<br>Mobile: +91-98210 11480</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail" class="icon"></i>
+                        <span>info@vijayaenterprises.org</span>
+                    </div>
+                </div>
+                <div class="footer-map">
+                    <h3>Our Location</h3>
+                    <div class="map-container" style="height:180px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60299.41560948764!2d72.8669159!3d19.1640154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9145ee03441%3A0xcb127e31c2115a61!2sUdhyog%20Kshetra!5e0!3m2!1sen!2sin!4v1770270216297!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vijaya Enterprises. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919821011480" target="_blank" class="whatsapp-float">
+        <i data-lucide="message-circle" style="width:32px; height:32px;"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

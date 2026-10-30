@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Vijaya Enterprises</title>
+    <meta name="description" content="Learn about Vijaya Enterprises, established in 1995 in Mumbai as a premier indenting agent and exporter/importer of agricultural commodities.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            padding: 6rem 0 3.5rem;
+            background: linear-gradient(135deg, #09261C 0%, #1B4332 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: var(--white);
+            font-size: 3.2rem;
+            font-weight: 800;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image-card img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .experience-badge {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            background: #09261C;
+            color: #ffffff;
+            padding: 1.5rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 2px solid var(--secondary-color);
+        }
+
+        .experience-badge h3 {
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+            margin: 0;
+            line-height: 1;
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .timeline-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .timeline-card .year {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 868px) {
+            .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .about-image-card img { height: 300px; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <i data-lucide="map-pin"></i>
+                    <div class="detail">
+                        <span class="label">Headquarters</span>
+                        <span class="value">Mulund (West), Mumbai</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="phone"></i>
+                    <div class="detail">
+                        <span class="label">Contact Desk</span>
+                        <span class="value">+91-98210 11480</span>
+                    </div>
+                </div>
+            </div>
+            <a href="contact.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1.2rem;">Quick Contact</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/vijaya-logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="name">Vijaya Enterprises</span>
+                    <span class="tagline">Global Export/Import</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html" class="active">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="quality.html">QUALITY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            <div class="nav-btns">
+                <a href="https://wa.me/919821011480" target="_blank" class="btn-whatsapp-nav">
+                    <i data-lucide="message-circle" style="width:18px; height:18px;"></i> WhatsApp
+                </a>
+                <div class="mobile-toggle"><i data-lucide="menu"></i></div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="quality.html">QUALITY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Vijaya Enterprises</h1>
+            <p>Pioneering Indenting Agent and Exporter/Importer of Agricultural Commodities since 1995.</p>
+        </div>
+    </section>
+
+    <!-- Main About Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text-side">
+                    <span style="font-weight: 700; color: var(--secondary-color); text-transform: uppercase; letter-spacing: 1px;">Our Legacy</span>
+                    <h2 style="font-size: 2.5rem; color: var(--primary-color); margin: 0.5rem 0 1.5rem;">Connecting Agricultural Producers with Global Buyers</h2>
+                    
+                    <p style="font-size: 1.05rem; color: #475569; line-height: 1.7; margin-bottom: 1.2rem;">
+                        Established in 1995, <strong>Vijaya Enterprises</strong> has grown into one of India's most trusted trade indenting and sourcing agencies. Under the visionary leadership of <strong>Mr. Tejas Thakkar</strong>, we bridge agricultural producers, wet milling processors, and feed manufacturers across international borders.
+                    </p>
+
+                    <p style="font-size: 1.05rem; color: #475569; line-height: 1.7; margin-bottom: 2rem;">
+                        Our core expertise lies in sourcing Yellow Corn, Maize Gluten Meal (60%), Soya Meal, DORB, Wheat, Starches, Liquid Glucose, and dried fruits. We ensure absolute transparency, rigorous quality testing, and robust logistics from port to plant.
+                    </p>
+
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; color: var(--primary-color);"><i data-lucide="check-circle" style="color: var(--secondary-color); vertical-align: middle;"></i> Ethical Trading</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light);">Transparent contracts & spot pricing.</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; color: var(--primary-color);"><i data-lucide="check-circle" style="color: var(--secondary-color); vertical-align: middle;"></i> Stringent QC</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light);">Lab tested moisture & protein metrics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image-card">
+                    <img src="images/ship.png" alt="Maritime Logistics & Agricultural Trade">
+                    <div class="experience-badge">
+                        <h3>30+ Years</h3>
+                        <p style="font-size: 0.85rem; margin-top: 0.2rem; color: rgba(255,255,255,0.85);">Industry Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones & Timeline -->
+    <section class="section-padding" style="background: #f8faf9;">
+        <div class="container">
+            <div class="section-title">
+                <span>Our Growth Journey</span>
+                <h2>Company Milestones</h2>
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <div class="year">1995</div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Foundation Established</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Started operations in Mumbai as a specialized agricultural grain indenting agent for domestic starch mills.</p>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="year">2005</div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Feed Portfolio Expansion</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Expanded into Maize Gluten Meal (60%), DORB, & Soya Meal for feed manufacturers across India.</p>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="year">2015</div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Global Export Reach</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Initiated international export partnerships across South East Asia, Middle East, & European trade desks.</p>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="year">2026</div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Modernized Supply Chain</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Handling over 50,000+ metric tons annually with digital tracking and end-to-end quality certification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="logo">
+                        <img src="images/vijaya-logo.png" alt="Logo" class="logo-img">
+                        <div class="footer-logo-text">
+                            <span class="name">Vijaya Enterprises</span>
+                            <span class="tagline">Global Export/Import</span>
+                        </div>
+                    </div>
+                    <p>Established in 1995, we are dedicated to bringing the best of agriculture to the world with integrity and excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="quality.html">Quality</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin" class="icon"></i>
+                        <span>227, 2nd Floor, UdhyogKshetra Industrial Estate, Mulund - Goregaon Link Road, Mulund (West), Mumbai 400 080, India.</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="phone" class="icon"></i>
+                        <span>+91-22-2562 3903 / 05<br>Mobile: +91-98210 11480</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail" class="icon"></i>
+                        <span>info@vijayaenterprises.org</span>
+                    </div>
+                </div>
+                <div class="footer-map">
+                    <h3>Our Location</h3>
+                    <div class="map-container" style="height:180px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60299.41560948764!2d72.8669159!3d19.1640154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9145ee03441%3A0xcb127e31c2115a61!2sUdhyog%20Kshetra!5e0!3m2!1sen!2sin!4v1770270216297!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vijaya Enterprises. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919821011480" target="_blank" class="whatsapp-float">
+        <i data-lucide="message-circle" style="width:32px; height:32px;"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

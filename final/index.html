@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijaya Enterprises | Global Export & Import of Agricultural Commodities</title>
+    <meta name="description" content="Vijaya Enterprises is a premier Indenting Agent and Exporter/Importer of Maize Gluten Meal, Yellow Corn, Soya Meal, Starches, DORB and essential grains since 1995 in Mumbai, India.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Custom page enhancements */
+        .hero-section {
+            position: relative;
+            min-height: 85vh;
+            background: linear-gradient(135deg, #09261C 0%, #114232 60%, #1B5E46 100%);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding: 5rem 0 3rem;
+        }
+
+        .hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(rgba(212, 163, 115, 0.15) 1px, transparent 1px);
+            background-size: 32px 32px;
+            opacity: 0.6;
+        }
+
+        .hero-glow {
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 163, 115, 0.2) 0%, rgba(27, 67, 50, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            background: rgba(212, 163, 115, 0.15);
+            border: 1px solid rgba(212, 163, 115, 0.3);
+            color: #E6C594;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(8px);
+        }
+
+        .hero-title {
+            font-size: 3.8rem;
+            font-weight: 800;
+            line-height: 1.15;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title span {
+            background: linear-gradient(135deg, #F3D5A5 0%, #D4A373 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-desc {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 620px;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .hero-card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+        }
+
+        .hero-glass-card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .hero-glass-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(212, 163, 115, 0.4);
+        }
+
+        .hero-card-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(212, 163, 115, 0.2);
+            color: #F3D5A5;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .hero-glass-card h4 {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero-glass-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .stats-counter-strip {
+            background: #09261C;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 2.5rem 0;
+            color: #ffffff;
+        }
+
+        .stat-box h3 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #D4A373;
+            margin-bottom: 0.2rem;
+        }
+
+        .stat-box p {
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Cow Farm Banner Section */
+        .cow-farm-banner-section {
+            position: relative;
+            background: linear-gradient(rgba(9, 38, 28, 0.75), rgba(9, 38, 28, 0.85)), url('images/cow-farm-banner.jpg') center/cover no-repeat;
+            padding: 6rem 0;
+            color: #ffffff;
+            border-top: 4px solid var(--secondary-color);
+            border-bottom: 4px solid var(--secondary-color);
+            box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+        }
+
+        .cow-banner-content {
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cow-banner-tag {
+            display: inline-block;
+            background: rgba(212, 163, 115, 0.25);
+            border: 1px solid #D4A373;
+            color: #F3D5A5;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 1.2rem;
+            backdrop-filter: blur(6px);
+        }
+
+        .cow-banner-title {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        .cow-banner-title span {
+            color: #F3D5A5;
+        }
+
+        .cow-banner-desc {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+            margin-bottom: 2.2rem;
+        }
+
+        .cow-features-pills {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .cow-pill {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 0.6rem 1.4rem;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cow-pill i {
+            color: #D4A373;
+        }
+
+        @media (max-width: 991px) {
+            .hero-section { min-height: auto; padding: 4rem 0; }
+            .hero-title { font-size: 2.8rem; }
+            .hero-card-grid { grid-template-columns: 1fr; margin-top: 2rem; }
+            .cow-banner-title { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Header Bar -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-info">
+                <div class="info-item">
+                    <i data-lucide="map-pin"></i>
+                    <div class="detail">
+                        <span class="label">Headquarter</span>
+                        <span class="value">Mulund (West), Mumbai, India</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="phone"></i>
+                    <div class="detail">
+                        <span class="label">Call Us Directly</span>
+                        <span class="value">+91-98210 11480 / +91-22-2562 3903</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="mail"></i>
+                    <div class="detail">
+                        <span class="label">Email Inquiry</span>
+                        <span class="value">info@vijayaenterprises.org</span>
+                    </div>
+                </div>
+            </div>
+            <a href="contact.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1.2rem;">Quick Inquiry</a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/vijaya-logo.png" alt="Vijaya Enterprises Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="name">Vijaya Enterprises</span>
+                    <span class="tagline">Global Indenting & Trade Agent</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="quality.html">QUALITY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            <div class="nav-btns">
+                <a href="https://wa.me/919821011480?text=Hello%20Vijaya%20Enterprises,%20I%20would%20like%20to%20inquire%20about%20agricultural%20products." target="_blank" class="btn-whatsapp-nav">
+                    <i data-lucide="message-circle" style="width:18px; height:18px;"></i> WhatsApp
+                </a>
+                <div class="mobile-toggle"><i data-lucide="menu"></i></div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="quality.html">QUALITY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modern Hero Section -->
+    <section class="hero-section">
+        <div class="hero-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="row" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: center;">
+                <div class="hero-text-side">
+                    <div class="hero-badge">
+                        <i data-lucide="award" style="width:16px; height:16px;"></i> Leading Indenting Agent Since 1995
+                    </div>
+                    <h1 class="hero-title">
+                        Sourcing Premium <span>Agricultural Commodities</span> Worldwide
+                    </h1>
+                    <p class="hero-desc">
+                        We specialize in supplying Maize Gluten Meal, Yellow Corn, Soya Meal, DORB, Starches, and essential grains for wet milling and animal feed industries across India & global markets.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="products.html" class="btn btn-secondary" style="padding: 0.9rem 2rem; font-size: 1rem;">
+                            Explore All Products <i data-lucide="arrow-right" style="width:18px; height:18px; vertical-align: middle; margin-left: 0.4rem;"></i>
+                        </a>
+                        <a href="contact.html" class="btn btn-primary" style="padding: 0.9rem 2rem; font-size: 1rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">
+                            Contact Our Team
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card-grid">
+                    <div class="hero-glass-card">
+                        <div class="hero-card-icon"><i data-lucide="shield-check"></i></div>
+                        <h4>Guaranteed Quality</h4>
+                        <p>100% tested moisture, protein, & purity standards for every consignment.</p>
+                    </div>
+                    <div class="hero-glass-card">
+                        <div class="hero-card-icon"><i data-lucide="globe"></i></div>
+                        <h4>Global Sourcing</h4>
+                        <p>Direct supply chain network bridging top Indian agricultural producers with global buyers.</p>
+                    </div>
+                    <div class="hero-glass-card">
+                        <div class="hero-card-icon"><i data-lucide="clock"></i></div>
+                        <h4>30+ Years Experience</h4>
+                        <p>Trusted indenting expertise under leadership of Mr. Tejas Thakkar since 1995.</p>
+                    </div>
+                    <div class="hero-glass-card">
+                        <div class="hero-card-icon"><i data-lucide="truck"></i></div>
+                        <h4>Reliable Logistics</h4>
+                        <p>Seamless vessel booking, port clearance, and timely door-step delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stat Counter Strip -->
+    <section class="stats-counter-strip">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-box">
+                        <h3>30+</h3>
+                        <p>Years of Trust</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-box">
+                        <h3>50,000+</h3>
+                        <p>Tons Shipped / Yr</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-box">
+                        <h3>30+</h3>
+                        <p>Agricultural Commodities</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-box">
+                        <h3>100%</h3>
+                        <p>Quality Assurance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Cow & Farm Livestock Banner Section -->
+    <section class="cow-farm-banner-section">
+        <div class="container">
+            <div class="cow-banner-content">
+                <span class="cow-banner-tag">
+                    <i data-lucide="check-circle" style="width:16px; height:16px; vertical-align: middle; margin-right: 0.3rem;"></i> Farm-Fresh Animal Nutrition
+                </span>
+                <h2 class="cow-banner-title">
+                    Empowering Dairy & Livestock Health with <span>High-Protein Feed</span>
+                </h2>
+                <p class="cow-banner-desc">
+                    Our high-protein Corn Gluten Meal (60%), Soya Meal, DORB, and Rapeseed Meal provide optimal protein and energy density, driving maximum milk yield and superior health for dairy cattle and farm livestock.
+                </p>
+
+                <div class="cow-features-pills">
+                    <div class="cow-pill"><i data-lucide="check"></i> 60% High Protein Concentrate</div>
+                    <div class="cow-pill"><i data-lucide="check"></i> 100% Natural Farm Ingredients</div>
+                    <div class="cow-pill"><i data-lucide="check"></i> Lab Certified Moisture & Fat</div>
+                    <div class="cow-pill"><i data-lucide="check"></i> Trusted Dairy Nutrition</div>
+                </div>
+
+                <div style="display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="products.html?category=Animal%20Feed" class="btn btn-secondary" style="padding: 0.9rem 2rem; font-size: 1rem;">
+                        View Animal Feed Products <i data-lucide="arrow-right" style="width:18px; height:18px; vertical-align: middle;"></i>
+                    </a>
+                    <a href="contact.html" class="btn" style="padding: 0.9rem 2rem; font-size: 1rem; background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.4); backdrop-filter: blur(8px);">
+                        Inquire Bulk Cattle Feed
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Grid Section -->
+    <section class="section-padding" style="background: #f8faf9;">
+        <div class="container">
+            <div class="section-title">
+                <span>Our Core Portfolios</span>
+                <h2>Agricultural Product Portfolios</h2>
+                <p style="color: var(--text-light); max-width: 650px; margin: 0.5rem auto 0;">We provide end-to-end sourcing, quality inspection, and trade indenting across four main agricultural segments.</p>
+            </div>
+
+            <div class="categories-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <!-- Card 1 -->
+                <div class="product-card" style="border: 1px solid #e2e8f0; border-radius: 16px;">
+                    <div class="product-image" style="height: 200px;">
+                        <img src="images/products/maize-gluten-meal.jpg" alt="Animal Feed Ingredients">
+                    </div>
+                    <div class="product-info">
+                        <div style="font-size: 0.8rem; font-weight: 700; color: var(--secondary-color); text-transform: uppercase; margin-bottom: 0.4rem;">High Protein Feed</div>
+                        <h3>Animal Feed Ingredients</h3>
+                        <p>Corn Gluten Meal 60%, DDGS, DORB, Soya Meal, Rapeseed Meal, and specialized poultry & cattle feeds.</p>
+                        <a href="products.html" class="btn-text" style="font-weight: 700; color: var(--primary-color);">Explore Category <i data-lucide="arrow-right" style="width:16px; height:16px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card" style="border: 1px solid #e2e8f0; border-radius: 16px;">
+                    <div class="product-image" style="height: 200px;">
+                        <img src="images/products/indian-yellow-maize.jpg" alt="Grains & Millets">
+                    </div>
+                    <div class="product-info">
+                        <div style="font-size: 0.8rem; font-weight: 700; color: var(--secondary-color); text-transform: uppercase; margin-bottom: 0.4rem;">Premium Crops</div>
+                        <h3>Grains & Millets</h3>
+                        <p>Indian Yellow Maize, Milling Wheat, Pearl Millet (Bajra), Sorghum (Jowar), and feed grains.</p>
+                        <a href="products.html" class="btn-text" style="font-weight: 700; color: var(--primary-color);">Explore Category <i data-lucide="arrow-right" style="width:16px; height:16px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card" style="border: 1px solid #e2e8f0; border-radius: 16px;">
+                    <div class="product-image" style="height: 200px;">
+                        <img src="images/products/maize-starch.jpg" alt="Food & Industrial Supplies">
+                    </div>
+                    <div class="product-info">
+                        <div style="font-size: 0.8rem; font-weight: 700; color: var(--secondary-color); text-transform: uppercase; margin-bottom: 0.4rem;">Starch Derivatives</div>
+                        <h3>Food Products & Starches</h3>
+                        <p>Pure Maize Starch, Liquid Glucose, Dextrose Monohydrate, Sorbitol, Maltodextrin, & Corn Flour.</p>
+                        <a href="products.html" class="btn-text" style="font-weight: 700; color: var(--primary-color);">Explore Category <i data-lucide="arrow-right" style="width:16px; height:16px;"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card" style="border: 1px solid #e2e8f0; border-radius: 16px;">
+                    <div class="product-image" style="height: 200px;">
+                        <img src="images/products/brown-raisins.jpg" alt="Spices & Fruits">
+                    </div>
+                    <div class="product-info">
+                        <div style="font-size: 0.8rem; font-weight: 700; color: var(--secondary-color); text-transform: uppercase; margin-bottom: 0.4rem;">Export Quality</div>
+                        <h3>Spices & Sun-Dried Fruits</h3>
+                        <p>Sun-dried Brown Raisins, Black Raisins, Extra Golden Raisins, Cinnamon Sticks & Spices.</p>
+                        <a href="products.html" class="btn-text" style="font-weight: 700; color: var(--primary-color);">Explore Category <i data-lucide="arrow-right" style="width:16px; height:16px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
+                <div class="header-text">
+                    <span style="font-weight: 700; color: var(--secondary-color); text-transform: uppercase; letter-spacing: 1px;">Top Commodities</span>
+                    <h2 style="font-size: 2.4rem;">Featured Commodities</h2>
+                </div>
+                <a href="products.html" class="btn btn-primary">View All 30+ Products <i data-lucide="arrow-right" style="width:16px; height:16px; vertical-align: middle;"></i></a>
+            </div>
+
+            <div class="products-grid" id="featured-products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/maize-gluten-meal.jpg" alt="Maize Gluten Meal">
+                    </div>
+                    <div class="product-info">
+                        <h3>Maize Gluten Meal (60%)</h3>
+                        <p>High-protein concentrate (60%) derived from corn wet milling process. Highly digestible source of essential amino acids.</p>
+                        <a href="product-detail.html?id=maize-gluten-meal-60" class="btn-text">View Details <i data-lucide="arrow-right" style="width:16px; height:16px;"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/indian-yellow-maize.jpg" alt="Indian Yellow Maize">
+                    </div>
+                    <div class="product-info">
+                        <h3>Indian Yellow Maize</h3>
+                        <p>Premium quality yellow corn sourced from top Indian agricultural regions for flour, starch, & livestock feed.</p>
+                        <a href="product-detail.html?id=yellow-corn" class="btn-text">View Details <i data-lucide="arrow-right" style="width:16px; height:16px;"></i></a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/soya-meal.jpg" alt="Soya Meal">
+                    </div>
+                    <div class="product-info">
+                        <h3>Soya Meal</h3>
+                        <p>High-protein soybean meal with 46-48% protein content, essential for balanced animal nutrition.</p>
+                        <a href="product-detail.html?id=soya-meal" class="btn-text">View Details <i data-lucide="arrow-right" style="width:16px; height:16px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us CTA Strip -->
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <span style="background: rgba(212,163,115,0.2); color: #F3D5A5; padding: 0.4rem 1.2rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Direct Indenting Agent</span>
+                <h2 style="margin-top: 1rem; font-size: 2.8rem;">Ready to Source Premium Agricultural Grains?</h2>
+                <p style="font-size: 1.15rem; opacity: 0.9; margin-bottom: 2.5rem;">Connect directly with Mr. Tejas Thakkar and our trading desk for immediate spot quotations, lab test reports, & shipping schedules.</p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/919821011480?text=Hello%20Mr.%20Tejas%20Thakkar,%20I%20want%20to%20inquire%20about%20bulk%20grain%20supply." target="_blank" class="btn btn-secondary" style="padding: 1rem 2.2rem; font-size: 1rem; display: inline-flex; align-items: center; gap: 0.6rem;">
+                        <i data-lucide="message-circle"></i> Chat on WhatsApp
+                    </a>
+                    <a href="contact.html" class="btn btn-primary" style="padding: 1rem 2.2rem; font-size: 1rem; background: #ffffff; color: var(--primary-color);">
+                        Submit Inquiry Form
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="logo" style="margin-bottom: 1rem;">
+                        <img src="images/vijaya-logo.png" alt="Logo" class="logo-img">
+                        <div class="footer-logo-text">
+                            <span class="name" style="color:#fff;">Vijaya Enterprises</span>
+                            <span class="tagline" style="color: rgba(255,255,255,0.7);">Global Export/Import</span>
+                        </div>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; line-height: 1.6;">Established in 1995, Vijaya Enterprises is a leading trade indenting agent bringing the finest agricultural commodities from India to international markets with integrity, reliability, & quality excellence.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="quality.html">Quality Assurance</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin" class="icon"></i>
+                        <span>227, 2nd Floor, UdhyogKshetra Industrial Estate, Mulund - Goregaon Link Road, Mulund (West), Mumbai 400 080, India.</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="phone" class="icon"></i>
+                        <span>+91-22-2562 3903 / 05<br>Mobile: +91-98210 11480</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail" class="icon"></i>
+                        <span>info@vijayaenterprises.org</span>
+                    </div>
+                </div>
+
+                <div class="footer-map">
+                    <h3>Office Location</h3>
+                    <div class="map-container" style="height: 180px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.2);">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60299.41560948764!2d72.8669159!3d19.1640154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9145ee03441%3A0xcb127e31c2115a61!2sUdhyog%20Kshetra!5e0!3m2!1sen!2sin!4v1770270216297!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vijaya Enterprises. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919821011480?text=Hello%20Vijaya%20Enterprises,%20I%20want%20to%20inquire%20about%20your%20agricultural%20products." target="_blank" class="whatsapp-float" title="Contact on WhatsApp">
+        <i data-lucide="message-circle" style="width:32px; height:32px; color: white;"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/products-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
